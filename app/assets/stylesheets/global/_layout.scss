@@ -17,6 +17,10 @@
 
   &--filters {
     display: flex;
+
+    @media ($mobile) {
+      display: block;
+    }
   }
 
   &--about {
