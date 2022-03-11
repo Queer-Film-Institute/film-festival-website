@@ -41,6 +41,10 @@
 
   h1 {
     font-size: 6rem;
+
+    @media ($mobile) {
+      font-size: 3rem;
+    }
   }
 
   .highlight {
@@ -68,4 +72,8 @@
   @media ($tablet) {
     margin-top: $large-spacing * 2;
   }
+}
+
+.filter-button {
+  margin-bottom: 24px;
 }

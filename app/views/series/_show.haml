@@ -14,7 +14,10 @@
 
 .wrapper.wrapper--filters.l-mtxl
   - if @all_events.length > 3
-    .filters
+    .filter-button.js-filter-button.button
+      Filter
+      
+    .filters.js-filters
       = render 'shared/filters'
 
   .wrapper--events
