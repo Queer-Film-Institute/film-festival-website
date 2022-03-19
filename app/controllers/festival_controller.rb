@@ -2,7 +2,7 @@ class FestivalController < ApplicationController
   include EventSortable
   include EventFilterable
 
-  CURRENT_FESTIVAL = '2021'
+  CURRENT_FESTIVAL = '2022'
 
   def index
     get_festival
