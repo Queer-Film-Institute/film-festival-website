@@ -9,8 +9,13 @@
     = @series.name
 
 .wrapper.series__description
-  %h1.highlight
+  %p.highlight
     = @series.description
+
+- if @series.series_schedule
+  .wrapper.series__description
+    %p.highlight
+      = link_to 'Download the series schedule', @series.series_schedule&.file&.url,target: '_blank'
 
 .wrapper.wrapper--filters.l-mtxl
   - if @all_events.length > 3
