@@ -39,7 +39,7 @@
     = stylesheet_link_tag 'application', media: 'all'
 
     %script{ src: '//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' }
-    %script{ src: '//use.fontawesome.com/2062cb2865.js' }
+    %script{ src: '//kit.fontawesome.com/9c88de52d4.js', crossorigin: 'anonymous' }
     = javascript_include_tag 'application'
 
   %body{class: yield(:body_class), 'data-page-parameters' => content_for?(:page_parameters) ? yield(:page_parameters) : false}
@@ -57,11 +57,21 @@
           = render 'shared/logo_link'
 
         .footer__links__right
-          %a.footer__link{href: '/events'} Events
-          %a.footer__link{href: '/about-us'} About
-          %a.footer__link{href: '/volunteer'} Volunteer
-          %a.footer__link{href: '/membership'} Membership
-          %a.footer__link{href: 'https://filmfreeway.com/festival/WickedQueer', target: '_blank'} Submit a Film
+          .links
+            %a.footer__link{href: '/events'} Events
+            %a.footer__link{href: '/about-us'} About
+            %a.footer__link{href: '/volunteer'} Volunteer
+            %a.footer__link{href: '/membership'} Membership
+            %a.footer__link{href: 'https://filmfreeway.com/festival/WickedQueer', target: '_blank'} Submit a Film
+          .social
+            %a{href: 'https://www.instagram.com/wickedqueer/'}
+              %i.fa.fa-instagram
+            %a{href: 'https://www.facebook.com/wickedqueer'}
+              %i.fa.fa-facebook
+            %a{href: 'https://twitter.com/wickedqueer'}
+              %i.fa.fa-twitter
+            %a{href: 'https://www.youtube.com/channel/UCyhUySd-3UIY2BJ5iZLxI4w'}
+              %i.fa.fa-youtube
 
       .footer__copyright
         .footer__copyright__left
