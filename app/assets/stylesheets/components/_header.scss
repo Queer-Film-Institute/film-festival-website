@@ -83,21 +83,17 @@ nav {
 }
 
 .donate-button {
-  align-items: flex;
-  display: flex;
-}
-
-.donate-button button {
   display: block;
   border: none;
   border-radius: 40px;
   background: $pink;
   color: white;
   cursor: pointer;
-  font-size: 16px;
+  font-size: $small-font-size;
   font-family: $heading-font-family;
   font-weight: $bold;
   padding: 6px 16px;
+  text-decoration: none;
 }
 
 .nav__link {
