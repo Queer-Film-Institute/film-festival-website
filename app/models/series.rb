@@ -3,12 +3,13 @@ class Series < ContentfulModel::Base
 
   belongs_to_many :events
 
-  return_nil_for_empty :name, :description, :series_schedule
+  return_nil_for_empty :name, :slug, :description, :series_schedule
 
   def to_hash
     {
       name: name,
       description: description,
+      slug: slug,
     }
   end
 
