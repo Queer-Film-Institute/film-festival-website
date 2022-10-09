@@ -11,7 +11,9 @@ gem 'haml'
 gem 'contentful_rails'
 gem 'require_all', "~>1.4.0"
 gem 'uglifier', '>= 1.3.0'
-gem 'net-smtp'
+gem 'net-smtp', require: false
+gem 'net-imap', require: false
+gem 'net-pop', require: false
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
