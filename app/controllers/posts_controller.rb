@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   def index
-      check_preview_api
-      @events = Post.all
+    check_preview_api
+    @posts = Post.find_all
   end
 
   def show
